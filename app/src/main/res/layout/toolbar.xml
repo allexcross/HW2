@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="@color/colorWrongData"
+    android:elevation="0dp"
+    android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/toolbarTitle"
+                    android:textColor="@color/colorToolbarText"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+
+                    tools:textSize="20dp"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/toolbarLogo"
+
+                    android:layout_width="132dp"
+                    android:layout_height="98dp"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="-20dp"
+                    android:layout_marginTop="-20dp"
+
+                    android:src="@mipmap/medic_foreground"
+                    app:srcCompat="@mipmap/ic_launcher_foreground"
+                    tools:srcCompat="@mipmap/med_foreground" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.appcompat.widget.Toolbar>
+
